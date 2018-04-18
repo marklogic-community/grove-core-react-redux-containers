@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
+    "build-dev": "webpack --mode=development",
     "test": "eslint src && jest",
     "test:watch": "eslint src && jest --watch"
   },
@@ -33,5 +34,10 @@
     "prettier": "^1.12.1",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.14"
+  },
+  "dependencies": {
+    "ml-documents-redux": "^0.3.1",
+    "ml-search-redux": "^0.6.1",
+    "muir-user-redux": "git+ssh://git@project.marklogic.com:7999/~pmcelwee/muir-user-redux.git#semver:0.2.0"
   }
 }
