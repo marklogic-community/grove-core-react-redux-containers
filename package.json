@@ -1,6 +1,6 @@
 {
   "name": "muir-react-redux",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Provides connected Redux + React containers for MarkLogic UI Resources (MUIR) apps",
   "main": "dist/index.js",
   "scripts": {
