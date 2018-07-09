@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { SearchView } from 'muir-react';
+import { SearchView } from 'muir-core-react-components';
 
-import { actions, selectors } from 'ml-search-redux';
+import { actions, selectors } from 'muir-search-redux';
 import { bindSelectors } from '../utils/redux-utils';
 const boundSelectors = bindSelectors(selectors, 'search');
 
@@ -23,7 +23,7 @@ const mapStateToProps = (state, ownProps) => {
     stagedSearch: sel.getStagedQuery(state),
     results: sel.getSearchResults(state),
     facets: sel.searchFacets(state),
-    activeConstraints: sel.stagedConstraints(state),
+    activeFilters: sel.stagedFilters(state),
     executionTime: sel.getSearchExecutionTime(state),
     total: sel.getSearchTotal(state),
     totalPages: sel.getSearchTotalPages(state),
@@ -41,8 +41,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       runSearch: myActions.runSearch,
       handleQueryTextChange: myActions.setQueryText,
       changePage: myActions.changePage,
-      addConstraint: myActions.addConstraint,
-      removeConstraint: myActions.removeConstraint
+      addFilter: myActions.addFilter,
+      removeFilter: myActions.removeFilter
     },
     dispatch
   );

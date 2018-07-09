@@ -22,7 +22,7 @@ describe('<SearchContainer />', () => {
     isSearchPending: jest.fn(),
     isSearchComplete: jest.fn(),
     searchFacets: jest.fn(),
-    stagedConstraints: jest.fn().mockReturnValue({})
+    stagedFilters: jest.fn().mockReturnValue([])
   };
 
   it('works', () => {
@@ -41,9 +41,9 @@ describe('<SearchContainer />', () => {
     const noop = () => {};
     const mockActions = {
       runSearch: searchSpy,
-      addConstraint: noop,
+      addFilter: noop,
       setQueryText: noop,
-      removeConstraint: noop
+      removeFilter: noop
     };
     const wrapper = mount(
       <SearchContainer

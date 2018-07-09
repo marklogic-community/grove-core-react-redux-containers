@@ -1,7 +1,7 @@
 {
-  "name": "muir-react-redux",
+  "name": "muir-core-react-redux-containers",
   "version": "0.1.1",
-  "description": "Provides connected Redux + React containers for MarkLogic UI Resources (MUIR) apps",
+  "description": "Provides connected Redux + React containers for the MarkLogic UI Resources (MUIR) React UI",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@project.marklogic.com:7999/~pmcelwee/muir-react-redux.git"
+    "url": "ssh://git@project.marklogic.com:7999/~pmcelwee/muir-core-react-redux-containers.git"
   },
   "keywords": [
     "MarkLogic",
@@ -33,10 +33,6 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "jest": "^22.4.3",
-    "ml-documents-redux": "^0.3.1",
-    "ml-search-redux": "^0.6.1",
-    "muir-react": "^0.8.2",
-    "muir-user-redux": "git+ssh://git@project.marklogic.com:7999/~pmcelwee/muir-user-redux.git#semver:0.2.0",
     "prettier": "^1.12.1",
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",
@@ -46,14 +42,16 @@
     "react-router-dom": "^4.2.2",
     "style-loader": "^0.21.0",
     "webpack": "^4.6.0",
-    "webpack-cli": "^2.0.14"
+    "webpack-cli": "^2.0.14",
+    "webpack-node-externals": "^1.7.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "muir-crud-redux": "git+ssh://git@project.marklogic.com:7999/~pmcelwee/muir-crud-redux.git#development",
+    "muir-search-redux": "git+ssh://git@project.marklogic.com:7999/nacw/muir-search-redux.git#development",
+    "muir-core-react-components": "git+ssh://git@project.marklogic.com:7999/nacw/muir-core-react-components.git#development",
+    "muir-user-redux": "^0.2.0"
+  },
   "peerDependencies": {
-    "ml-documents-redux": "^0.3.1",
-    "ml-search-redux": "^0.6.1",
-    "muir-react": "^0.8.2",
-    "muir-user-redux": "git+ssh://git@project.marklogic.com:7999/~pmcelwee/muir-user-redux.git#semver:0.2.0",
     "react-redux": "^5.0.7",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"

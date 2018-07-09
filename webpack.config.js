@@ -9,6 +9,10 @@ module.exports = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
+  externals: {
+    'muir-core-react-components': 'muir-core-react-components',
+    react: 'react'
+  },
   module: {
     rules: [
       {
