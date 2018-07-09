@@ -5,7 +5,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'muir-user-redux',
+    library: 'muir-core-react-redux-containers',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
