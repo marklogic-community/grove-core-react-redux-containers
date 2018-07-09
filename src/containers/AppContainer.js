@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { withRouter } from 'react-router-dom';
 
 import {
   actions as userActions,
@@ -40,4 +39,7 @@ const mapDispatchToProps = dispatch =>
     dispatch
   );
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AppContainer));
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(AppContainer);
