@@ -15,4 +15,7 @@ const mapDispatchToProps = dispatch =>
     dispatch
   );
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoginJumbotron);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(LoginJumbotron);

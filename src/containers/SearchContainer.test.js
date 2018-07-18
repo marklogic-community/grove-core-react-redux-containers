@@ -1,3 +1,4 @@
+/* eslint-env jest */
 import React from 'react';
 import SearchContainer from './SearchContainer';
 import { shallow, mount } from 'enzyme';

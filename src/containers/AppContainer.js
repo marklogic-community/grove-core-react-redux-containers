@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -21,6 +22,12 @@ class AppContainer extends React.Component {
     return this.props.render(this.props);
   }
 }
+
+AppContainer.propTypes = {
+  currentUser: PropTypes.object,
+  getAuthenticationStatus: PropTypes.function.isRequired,
+  render: PropTypes.function.isRequired
+};
 
 const mapStateToProps = (state, ownProps) => {
   return {

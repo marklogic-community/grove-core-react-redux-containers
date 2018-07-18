@@ -28,8 +28,9 @@ const mapDispatchToProps = dispatch =>
     dispatch
   );
 
-const DetailContainer = connect(mapStateToProps, mapDispatchToProps)(
-  DetailView
-);
+const DetailContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(DetailView);
 
 export default DetailContainer;
