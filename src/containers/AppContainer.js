@@ -25,8 +25,8 @@ class AppContainer extends React.Component {
 
 AppContainer.propTypes = {
   currentUser: PropTypes.object,
-  getAuthenticationStatus: PropTypes.function.isRequired,
-  render: PropTypes.function.isRequired
+  getAuthenticationStatus: PropTypes.func.isRequired,
+  render: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state, ownProps) => {
