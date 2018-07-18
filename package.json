@@ -32,11 +32,13 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.10.0",
-    "jest": "^22.4.3",
+    "jest": "^23.4.1",
     "prettier": "^1.12.1",
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",
@@ -53,6 +55,12 @@
     "muir-search-redux": "git+ssh://git@project.marklogic.com:7999/nacw/muir-search-redux.git#development",
     "muir-user-redux": "^0.2.0",
     "prop-types": "^15.6.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/test/styleMock.js"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/test/setupTests.js"
   },
   "peerDependencies": {
     "react-redux": "^5.0.7",
