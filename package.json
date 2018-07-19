@@ -1,6 +1,6 @@
 {
   "name": "muir-core-react-redux-containers",
-  "version": "0.2.1",
+  "version": "0.10.0-alpha",
   "description": "Provides connected Redux + React containers for the MarkLogic UI Resources (MUIR) React UI",
   "main": "dist/index.js",
   "scripts": {
@@ -50,10 +50,10 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "muir-core-react-components": "git+ssh://git@project.marklogic.com:7999/nacw/muir-core-react-components.git#development",
-    "muir-crud-redux": "git+ssh://git@project.marklogic.com:7999/~pmcelwee/muir-crud-redux.git#development",
-    "muir-search-redux": "git+ssh://git@project.marklogic.com:7999/nacw/muir-search-redux.git#development",
-    "muir-user-redux": "^0.2.0",
+    "muir-core-react-components": "git+ssh://git@project.marklogic.com:7999/nacw/muir-core-react-components.git#semver:~0.10.0-alpha",
+    "muir-crud-redux": "git+ssh://git@project.marklogic.com:7999/~pmcelwee/muir-crud-redux.git#semver:~0.10.0-alpha",
+    "muir-search-redux": "git+ssh://git@project.marklogic.com:7999/nacw/muir-search-redux.git#semver:~0.10.0-alpha",
+    "muir-user-redux": "git+ssh://git@project.marklogic.com:7999/~pmcelwee/muir-user-redux.git#semver:~0.10.0-alpha",
     "prop-types": "^15.6.2"
   },
   "jest": {
