@@ -7,7 +7,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "build": "npm run lint && webpack -p",
-    "build-dev": "npm run lint && webpack --mode=development",
+    "build:dev": "npm run lint && webpack --mode=development",
     "test": "npm run lint && jest",
     "test:watch": "npm run lint && jest --watch"
   },
