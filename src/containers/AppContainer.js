@@ -21,12 +21,6 @@ class AppContainer extends React.Component {
     }
   }
 
-  componentDidUpdate() {
-    if (this.props.error === 'Unauthorized') {
-      this.props.becameUnauthorized();
-    }
-  }
-
   render() {
     return this.props.render(this.props);
   }
