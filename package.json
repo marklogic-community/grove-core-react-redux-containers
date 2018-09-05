@@ -50,7 +50,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "muir-core-react-components": "git+https://project.marklogic.com/repo/scm/nacw/muir-core-react-components.git#semver:~0.10.0-alpha.2",
+    "muir-core-react-components": "git+https://project.marklogic.com/repo/scm/nacw/muir-core-react-components.git#semver:~0.10.0-alpha.4",
     "muir-crud-redux": "git+https://project.marklogic.com/repo/scm/~pmcelwee/muir-crud-redux.git#semver:~0.10.0-alpha",
     "muir-search-redux": "git+https://project.marklogic.com/repo/scm/nacw/muir-search-redux.git#semver:~0.10.0-alpha.2",
     "muir-user-redux": "git+https://project.marklogic.com/repo/scm/~pmcelwee/muir-user-redux.git#semver:~0.10.0-alpha",

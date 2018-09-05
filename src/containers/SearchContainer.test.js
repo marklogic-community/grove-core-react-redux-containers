@@ -11,9 +11,11 @@ describe('<SearchContainer />', () => {
     subscribe: () => {}
   };
 
+  let currentPage = 1;
+
   const mockSelectors = {
     getSearchResults: jest.fn().mockReturnValue([]),
-    getStagedQuery: jest.fn().mockReturnValue({}),
+    getStagedQuery: jest.fn().mockReturnValue({ page: currentPage }),
     getVisibleQueryText: jest.fn().mockReturnValue(''),
     getSearchExecutionTime: jest.fn(),
     getSearchTotal: jest.fn(),
@@ -44,6 +46,7 @@ describe('<SearchContainer />', () => {
       runSearch: searchSpy,
       addFilter: noop,
       setQueryText: noop,
+      changePage: () => (currentPage = currentPage + 1),
       removeFilter: noop
     };
     const wrapper = mount(
