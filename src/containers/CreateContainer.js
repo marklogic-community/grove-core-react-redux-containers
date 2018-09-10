@@ -19,9 +19,9 @@ const mapStateToProps = (state, ownProps) => {
   const sel = boundSelectors;
   return {
     ...ownProps,
-    error: sel.error(state),
-    pending: sel.pending(state),
-    docUri: sel.docUri(state)
+    error: sel.creationError(state),
+    pending: sel.isCreatePending(state),
+    docUri: sel.createdDocUri(state)
   };
 };
 
