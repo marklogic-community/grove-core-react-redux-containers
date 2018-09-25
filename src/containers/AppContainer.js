@@ -8,13 +8,23 @@ import {
   selectors as userSelectors
 } from 'muir-user-redux';
 
-import { selectors as searchSelectors } from 'muir-search-redux';
 import { bindSelectors } from '../utils/redux-utils';
 
 const boundUserSelectors = bindSelectors(userSelectors, 'user');
-const boundSearchSelectors = bindSelectors(searchSelectors, 'search');
-
 class AppContainer extends React.Component {
+  constructor(props) {
+    super(props);
+    // Move fetch() to global so errors, presently just 401s, can be intercepted
+    const fetch = global.fetch;
+    global.fetch = function(url, options) {
+      return fetch(url, options).then(response => {
+        if (response.status === 401) {
+          props.submitLogout(props.currentUser);
+        }
+        return response;
+      });
+    };
+  }
   componentDidMount() {
     if (!this.props.currentUser) {
       this.props.getAuthenticationStatus();
@@ -30,15 +40,13 @@ AppContainer.propTypes = {
   currentUser: PropTypes.object,
   getAuthenticationStatus: PropTypes.func.isRequired,
   render: PropTypes.func.isRequired,
-  error: PropTypes.string,
-  becameUnauthorized: PropTypes.func
+  submitLogout: PropTypes.func
 };
 
 const mapStateToProps = (state, ownProps) => {
   return {
     isAuthenticated: boundUserSelectors.isCurrentUserAuthenticated(state),
     currentUser: boundUserSelectors.currentUser(state),
-    error: boundSearchSelectors.getSearchError(state),
     ...ownProps
   };
 };
@@ -47,8 +55,7 @@ const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
       submitLogout: userActions.submitLogout,
-      getAuthenticationStatus: userActions.getAuthenticationStatus,
-      becameUnauthorized: userActions.becameUnauthorized
+      getAuthenticationStatus: userActions.getAuthenticationStatus
     },
     dispatch
   );
