@@ -1,9 +1,9 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { DetailView } from 'muir-core-react-components';
+import { DetailView } from 'grove-core-react-components';
 
-import { actions, selectors } from 'muir-crud-redux';
+import { actions, selectors } from 'grove-crud-redux';
 import { bindSelectors } from '../utils/redux-utils';
 const boundSelectors = bindSelectors(selectors, 'documents');
 
@@ -12,7 +12,7 @@ const mapStateToProps = (state, ownProps) => {
   const detail = sel.documentByUri(state, ownProps.uri);
   return {
     // TODO: move this label implementation to a samplePerson branch
-    // because it is not generic, but it is useful for a quick MUIR demo
+    // because it is not generic, but it is useful for a quick Grove demo
     label: detail && detail.name,
     detail: detail,
     error: sel.errorByUri(state, ownProps.uri),

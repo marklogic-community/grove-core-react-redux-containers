@@ -1,7 +1,7 @@
 {
-  "name": "muir-core-react-redux-containers",
-  "version": "0.10.0-alpha.3",
-  "description": "Provides connected Redux + React containers for the MarkLogic UI Resources (MUIR) React UI",
+  "name": "grove-core-react-redux-containers",
+  "version": "0.10.0-beta",
+  "description": "Provides connected Redux + React containers for the MarkLogic Grove React UI",
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint .",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@project.marklogic.com:7999/~pmcelwee/muir-core-react-redux-containers.git"
+    "url": "ssh://git@project.marklogic.com:7999/~pmcelwee/grove-core-react-redux-containers.git"
   },
   "keywords": [
     "MarkLogic",
-    "MUIR",
+    "Grove",
     "React",
     "Redux",
     "Search"
@@ -50,15 +50,15 @@
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "style-loader": "^0.21.0",
-    "webpack": "^4.6.0",
-    "webpack-cli": "^2.0.14",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "muir-core-react-components": "git+https://project.marklogic.com/repo/scm/nacw/muir-core-react-components.git#development",
-    "muir-crud-redux": "git+https://project.marklogic.com/repo/scm/~pmcelwee/muir-crud-redux.git#development",
-    "muir-search-redux": "git+https://project.marklogic.com/repo/scm/nacw/muir-search-redux.git#development",
-    "muir-user-redux": "git+https://project.marklogic.com/repo/scm/~pmcelwee/muir-user-redux.git#development",
+    "grove-core-react-components": "git+https://project.marklogic.com/repo/scm/nacw/grove-core-react-components.git#development",
+    "grove-crud-redux": "git+https://project.marklogic.com/repo/scm/~pmcelwee/grove-crud-redux.git#development",
+    "grove-search-redux": "git+https://project.marklogic.com/repo/scm/nacw/grove-search-redux.git#development",
+    "grove-user-redux": "git+https://project.marklogic.com/repo/scm/~pmcelwee/grove-user-redux.git#development",
     "prop-types": "^15.6.2"
   },
   "jest": {
@@ -72,5 +72,19 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "redux": "^2.0.0 || ^3.0.0 || ^4.0.0-0"
-  }
+  },
+  "contributors": [
+    {
+      "name": "Patrick McElwee",
+      "url": "https://github.com/patrickmcelwee"
+    },
+    {
+      "name": "Marianne Myers",
+      "url": "https://github.com/mariannemyers"
+    },
+    {
+      "name": "Geert Josten",
+      "url": "https://github.com/grtjn"
+    }
+  ]
 }

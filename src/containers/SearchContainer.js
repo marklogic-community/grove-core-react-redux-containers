@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { SearchView } from 'muir-core-react-components';
+import { SearchView } from 'grove-core-react-components';
 
-import { actions, selectors } from 'muir-search-redux';
+import { actions, selectors } from 'grove-search-redux';
 import { bindSelectors } from '../utils/redux-utils';
 const boundSelectors = bindSelectors(selectors, 'search');
 

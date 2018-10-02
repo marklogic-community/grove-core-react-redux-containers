@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import {
   actions as userActions,
   selectors as userSelectors
-} from 'muir-user-redux';
+} from 'grove-user-redux';
 
 import { bindSelectors } from '../utils/redux-utils';
 
