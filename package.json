@@ -24,6 +24,10 @@
   ],
   "author": "Patrick McElwee <patrick.mcelwee@marklogic.com>",
   "license": "Apache-2.0",
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.7.0"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.6",
