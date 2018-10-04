@@ -5,12 +5,12 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'muir-core-react-redux-containers',
+    library: 'grove-core-react-redux-containers',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
   externals: {
-    'muir-core-react-components': 'muir-core-react-components',
+    'grove-core-react-components': 'grove-core-react-components',
     react: 'react'
   },
   module: {

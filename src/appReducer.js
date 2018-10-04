@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import search from 'muir-search-redux';
-import documents from 'muir-crud-redux';
-import user, { actionTypes } from 'muir-user-redux';
+import search from 'grove-search-redux';
+import documents from 'grove-crud-redux';
+import user, { actionTypes } from 'grove-user-redux';
 
 const coreAppReducer = (state, action) => {
   // empty out state on logout, so we don't leak info

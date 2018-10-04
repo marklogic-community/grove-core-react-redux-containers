@@ -9,5 +9,11 @@
     "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended"
-  ]
+  ],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.0"
+    }
+  }
 }

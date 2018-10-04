@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { CreateView } from 'muir-core-react-components';
+import { CreateView } from 'grove-core-react-components';
 
 import { bindActionCreators } from 'redux';
 
-import { actions, selectors } from 'muir-crud-redux';
+import { actions, selectors } from 'grove-crud-redux';
 import { bindSelectors } from '../utils/redux-utils';
 const boundSelectors = bindSelectors(selectors, 'documents');
 
