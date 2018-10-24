@@ -21,7 +21,7 @@ const mapStateToProps = (state, ownProps) => {
     ...ownProps,
     error: sel.creationError(state),
     pending: sel.isCreatePending(state),
-    docUri: sel.createdDocUri(state)
+    docId: sel.createdDocId(state)
   };
 };
 
