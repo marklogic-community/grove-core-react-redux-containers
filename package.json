@@ -1,6 +1,6 @@
 {
   "name": "grove-core-react-redux-containers",
-  "version": "0.10.0-beta",
+  "version": "0.10.0-beta.1",
   "description": "Provides connected Redux + React containers for the MarkLogic Grove React UI",
   "main": "dist/index.js",
   "scripts": {
@@ -55,9 +55,9 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "grove-core-react-components": "git+https://project.marklogic.com/repo/scm/nacw/grove-core-react-components.git#0.10.0-beta",
+    "grove-core-react-components": "git+https://project.marklogic.com/repo/scm/nacw/grove-core-react-components.git#0.10.0-beta.1",
     "grove-crud-redux": "git+https://project.marklogic.com/repo/scm/~pmcelwee/grove-crud-redux.git#0.10.0-beta",
-    "grove-search-redux": "git+https://project.marklogic.com/repo/scm/nacw/grove-search-redux.git#0.10.0-beta",
+    "grove-search-redux": "git+https://project.marklogic.com/repo/scm/nacw/grove-search-redux.git#0.10.0-beta.1",
     "grove-user-redux": "git+https://project.marklogic.com/repo/scm/~pmcelwee/grove-user-redux.git#0.10.0-beta",
     "prop-types": "^15.6.2"
   },
