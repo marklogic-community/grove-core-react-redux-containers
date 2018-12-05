@@ -5,7 +5,7 @@ import { DetailView } from 'grove-core-react-components';
 
 import { actions, selectors } from 'grove-crud-redux';
 import { bindSelectors } from '../utils/redux-utils';
-const boundSelectors = bindSelectors(selectors, 'documents');
+const boundSelectors = bindSelectors(selectors, 'crud');
 
 const mapStateToProps = (state, ownProps) => {
   const sel = boundSelectors;

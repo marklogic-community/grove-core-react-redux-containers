@@ -7,7 +7,7 @@ import { bindActionCreators } from 'redux';
 
 import { actions, selectors } from 'grove-crud-redux';
 import { bindSelectors } from '../utils/redux-utils';
-const boundSelectors = bindSelectors(selectors, 'documents');
+const boundSelectors = bindSelectors(selectors, 'crud');
 
 let CreateContainer = class CreateContainer extends React.Component {
   render() {
