@@ -42,7 +42,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       handleQueryTextChange: myActions.setQueryText,
       changePage: myActions.changePage,
       addFilter: myActions.addFilter,
-      removeFilter: myActions.removeFilter
+      removeFilter: myActions.removeFilter,
+      replaceFilter: myActions.replaceFilter,
+      clearFilter: myActions.clearFilter
     },
     dispatch
   );
