@@ -44,8 +44,8 @@ class AppContainer extends React.Component {
 }
 
 AppContainer.propTypes = {
-  currentUser: PropTypes.object,
-  isAuthenticated: PropTypes.bool.isRequired,
+  currentUser: PropTypes.string,
+  isAuthenticated: PropTypes.bool,
   getAuthenticationStatus: PropTypes.func.isRequired,
   render: PropTypes.func.isRequired,
   submitLogout: PropTypes.func.isRequired,
