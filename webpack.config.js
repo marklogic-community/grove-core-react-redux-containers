@@ -11,7 +11,10 @@ module.exports = {
   },
   externals: {
     'grove-core-react-components': 'grove-core-react-components',
-    react: 'react'
+    react: 'react',
+    'react-dom': 'react-dom',
+    'react-redux': 'react-redux',
+    redux: 'redux'
   },
   module: {
     rules: [
