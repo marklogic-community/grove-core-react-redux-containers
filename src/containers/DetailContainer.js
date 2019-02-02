@@ -10,11 +10,13 @@ const boundSelectors = bindSelectors(selectors, 'documents');
 const mapStateToProps = (state, ownProps) => {
   const sel = boundSelectors;
   const detail = sel.documentById(state, ownProps.id);
+  const similar = sel.similarById(state, ownProps.id);
   return {
     // TODO: move this label implementation to a samplePerson branch
     // because it is not generic, but it is useful for a quick Grove demo
     label: detail && detail.name,
     detail: detail,
+    similar: similar,
     error: sel.errorById(state, ownProps.id),
     contentType: sel.contentTypeById(state, ownProps.id)
   };
@@ -23,7 +25,8 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
-      loadDetail: actions.fetchDoc
+      loadDetail: actions.fetchDoc,
+      loadSimilar: actions.fetchSimilar
     },
     dispatch
   );
