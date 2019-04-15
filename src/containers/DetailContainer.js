@@ -1,9 +1,9 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { DetailView } from 'grove-core-react-components';
+import { DetailView } from '@marklogic-community/grove-core-react-components';
 
-import { actions, selectors } from 'grove-crud-redux';
+import { actions, selectors } from '@marklogic-community/grove-crud-redux';
 import { bindSelectors } from '../utils/redux-utils';
 const boundSelectors = bindSelectors(selectors, 'documents');
 

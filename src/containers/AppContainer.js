@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import {
   actions as userActions,
   selectors as userSelectors
-} from 'grove-user-redux';
+} from '@marklogic-community/grove-user-redux';
 
 import { bindSelectors } from '../utils/redux-utils';
 
