@@ -1,6 +1,6 @@
 {
   "name": "@marklogic-community/grove-core-react-redux-containers",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "description": "Provides connected Redux + React containers for the MarkLogic Grove React UI",
   "main": "dist/index.js",
   "scripts": {
@@ -22,7 +22,6 @@
     "Redux",
     "Search"
   ],
-  "author": "Patrick McElwee <patrick.mcelwee@marklogic.com>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/marklogic-community/grove-core-react-redux-containers/issues"
@@ -78,8 +77,8 @@
   },
   "contributors": [
     {
-      "name": "Patrick McElwee",
-      "url": "https://github.com/patrickmcelwee"
+      "name": "Matt Pileggi",
+      "url": "https://github.com/withjam"
     },
     {
       "name": "Marianne Myers",
