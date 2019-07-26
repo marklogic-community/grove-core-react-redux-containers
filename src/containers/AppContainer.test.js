@@ -7,7 +7,7 @@ describe('<AppContainer />', () => {
   const mockStore = {
     getState: () => ({
       user: {
-        currentUser: {}
+        currentUser: ''
       }
     }),
     dispatch: () => {},
