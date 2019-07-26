@@ -58,10 +58,10 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "@marklogic-community/grove-core-react-components": "^1.0.0-rc.1",
-    "@marklogic-community/grove-crud-redux": "^1.0.0-rc.1",
-    "@marklogic-community/grove-search-redux": "^1.0.0-rc.1",
-    "@marklogic-community/grove-user-redux": "^1.0.0-rc.1",
+    "@marklogic-community/grove-core-react-components": "^1.0.0",
+    "@marklogic-community/grove-crud-redux": "^1.0.0",
+    "@marklogic-community/grove-search-redux": "^1.0.0",
+    "@marklogic-community/grove-user-redux": "^1.0.0",
     "prop-types": "^15.6.2"
   },
   "jest": {
