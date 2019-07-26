@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import search from 'grove-search-redux';
-import documents from 'grove-crud-redux';
-import user, { actionTypes } from 'grove-user-redux';
+import search from '@marklogic-community/grove-search-redux';
+import documents from '@marklogic-community/grove-crud-redux';
+import user, { actionTypes } from '@marklogic-community/grove-user-redux';
 
 const coreAppReducer = (state, action) => {
   // empty out state on logout, so we don't leak info

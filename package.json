@@ -1,5 +1,5 @@
 {
-  "name": "grove-core-react-redux-containers",
+  "name": "@marklogic-community/grove-core-react-redux-containers",
   "version": "1.0.0-rc.1",
   "description": "Provides connected Redux + React containers for the MarkLogic Grove React UI",
   "main": "dist/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@project.marklogic.com:7999/~pmcelwee/grove-core-react-redux-containers.git"
+    "url": "https://github.com/marklogic-community/grove-core-react-redux-containers.git"
   },
   "keywords": [
     "MarkLogic",
@@ -24,6 +24,9 @@
   ],
   "author": "Patrick McElwee <patrick.mcelwee@marklogic.com>",
   "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/marklogic-community/grove-core-react-redux-containers/issues"
+  },
   "engines": {
     "node": ">=8.0.0",
     "npm": ">=5.7.0"
@@ -55,10 +58,10 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "grove-core-react-components": "git+https://project.marklogic.com/repo/scm/nacw/grove-core-react-components.git#1.0.0-rc.1",
-    "grove-crud-redux": "git+https://project.marklogic.com/repo/scm/~pmcelwee/grove-crud-redux.git#1.0.0-rc.1",
-    "grove-search-redux": "git+https://project.marklogic.com/repo/scm/nacw/grove-search-redux.git#1.0.0-rc.1",
-    "grove-user-redux": "git+https://project.marklogic.com/repo/scm/~pmcelwee/grove-user-redux.git#1.0.0-rc.1",
+    "@marklogic-community/grove-core-react-components": "^1.0.0-rc.1",
+    "@marklogic-community/grove-crud-redux": "^1.0.0-rc.1",
+    "@marklogic-community/grove-search-redux": "^1.0.0-rc.1",
+    "@marklogic-community/grove-user-redux": "^1.0.0-rc.1",
     "prop-types": "^15.6.2"
   },
   "jest": {
