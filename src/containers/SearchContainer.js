@@ -44,7 +44,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       addFilter: myActions.addFilter,
       removeFilter: myActions.removeFilter,
       replaceFilter: myActions.replaceFilter,
-      clearFilter: myActions.clearFilter
+      clearFilter: myActions.clearFilter,
+      showMore: myActions.showMore
     },
     dispatch
   );

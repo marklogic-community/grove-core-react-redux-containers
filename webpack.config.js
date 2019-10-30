@@ -10,7 +10,8 @@ module.exports = {
     umdNamedDefine: true
   },
   externals: {
-    'grove-core-react-components': 'grove-core-react-components',
+    '@marklogic-community/grove-core-react-components':
+      '@marklogic-community/grove-core-react-components',
     react: 'react'
   },
   module: {
