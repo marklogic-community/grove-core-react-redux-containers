@@ -13,6 +13,9 @@ module.exports = {
     'grove-core-react-components': 'grove-core-react-components',
     react: 'react'
   },
+  resolve: {
+    symlinks: false
+  },
   module: {
     rules: [
       {

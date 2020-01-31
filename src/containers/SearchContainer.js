@@ -30,7 +30,10 @@ const mapStateToProps = (state, ownProps) => {
     page: sel.getPage(state),
     isSearchPending: sel.isSearchPending(state),
     isSearchComplete: sel.isSearchComplete(state),
-    error: sel.getSearchError(state)
+    error: sel.getSearchError(state),
+    searchOptions: sel.getSearchOptions(state),
+    isOptionsPending: sel.isOptionsPending(state),
+    sort: sel.getSort(state)
   };
 };
 
@@ -44,7 +47,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       addFilter: myActions.addFilter,
       removeFilter: myActions.removeFilter,
       replaceFilter: myActions.replaceFilter,
-      clearFilter: myActions.clearFilter
+      clearFilter: myActions.clearFilter,
+      changeSort: myActions.changeSort,
+      loadOptions: myActions.loadOptions
     },
     dispatch
   );
