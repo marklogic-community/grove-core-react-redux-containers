@@ -1,0 +1,3 @@
+This repository is NOW DEPRECATED.
+
+The containers that connect MarkLogic Grove React Components to the toolkit's Redux state management layer are now maintained directly in the [Grove React UI](https://github.com/marklogic-community/grove-react-ui).  The core functionality of this project was moved to [src/containers](https://github.com/marklogic-community/grove-react-ui/tree/master/src/containers) in that project.
